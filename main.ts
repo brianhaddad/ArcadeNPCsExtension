@@ -1,13 +1,8 @@
-namespace NPCs {
-    /**
-     * Sets a number in the data of a sprite
-     */
-    //% blockId=spriteKindNPC block="NPC"
-    //% group="Kind"
-    //% weight=10
-    //% blockGap=8
+namespace SpriteKind {
+    //% isKind
     export const NPC = SpriteKind.create()
-
+}
+namespace NPCs {
     /**
      * Creates an NPC sprite
      */
@@ -16,7 +11,7 @@ namespace NPCs {
     //% weight=10
     //% blockGap=8
     export function createNPC (image: Image, X: number, Y: number) : Sprite {
-        let sprite = sprites.create(image, NPCs.NPC)
+        let sprite = sprites.create(image, SpriteKind.NPC)
         sprite.z = -1
         tiles.placeOnTile(sprite, tiles.getTileLocation(X, Y))
         return sprite
