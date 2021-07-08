@@ -1,7 +1,13 @@
-namespace SpriteKind {
-    export const NPC = SpriteKind.create()
-}
 namespace NPCs {
+    /**
+     * Sets a number in the data of a sprite
+     */
+    //% blockId=spriteKindNPC block="NPC"
+    //% group="Kind"
+    //% weight=10
+    //% blockGap=8
+    export const NPC = SpriteKind.create()
+
     /**
      * Creates an NPC sprite
      */
