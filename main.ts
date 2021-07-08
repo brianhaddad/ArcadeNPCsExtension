@@ -5,7 +5,7 @@ namespace NPCs {
     /**
      * Creates an NPC sprite
      */
-    //% blockId=spriteCreateNPC block="create sprite with image $image=variables_get at x $X y $Y"
+    //% blockId=spriteCreateNPC block="create sprite with image $image at x $X y $Y"
     //% group="Create"
     //% weight=10
     //% blockGap=8
