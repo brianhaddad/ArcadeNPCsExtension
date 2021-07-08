@@ -16,7 +16,7 @@ namespace NPCs {
     //% weight=10
     //% blockGap=8
     export function createNPC (image: Image, X: number, Y: number) : Sprite {
-        let sprite = sprites.create(image, SpriteKind.NPC)
+        let sprite = sprites.create(image, NPCs.NPC)
         sprite.z = -1
         tiles.placeOnTile(sprite, tiles.getTileLocation(X, Y))
         return sprite
